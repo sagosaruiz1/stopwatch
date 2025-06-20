@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<body>
+    <nav id="title-bar" style="-webkit-app-region: drag">
+        <img id="clock" src="images/pixel-clock.png" alt="clock" height="25px" width="25px">
+        <div class="nav-buttons">
+            <button class="overlay" id="minimize"><i class="fa-solid fa-window-minimize"></i></button>
+            <button class="overlay" id="close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 id="title">Stopwatch</h1>
+        <div id="container">
+            <div id="display">
+                00:00:00:00
+            </div>
+            <div id="controls">
+                <button id="startBtn" onclick="start()">Start</button>
+                <button id="stopBtn" onclick="stop()">Stop</button>
+                <button id="resetBtn" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="images/low-hp-cat.png" alt="cat">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
